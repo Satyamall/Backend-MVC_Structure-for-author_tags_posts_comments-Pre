@@ -3,19 +3,19 @@ MVC Structure for Author, Tag, Post, and comment by using mongoose, express and 
 
 # MODELS, VIEWS & CONTROLLERS ( MVC )
 
--Our applications generally consists of 3 layers
+- Our applications generally consists of 3 layers
 
 View Layer :- This is the client facing side of the application
 Application Layer :- This is where the application logic sits
 Business Layer or Data Layer :- This is where the business transactions are made
 
--Above are kind of technical definitions of the layers but the above layers in more simpler language is :-
+- Above are kind of technical definitions of the layers but the above layers in more simpler language is :-
 
 View Layer :- Frontend of the application and as we are using React for all of the frontend needs hence we don't have a view layer in our express application but you can create views in express but out of scope for this course.
 Application Layer :- This is like the co-ordinator of the system and it takes in requests from the view layer and then delegates to different parts of the code and business layer to get different things, for e.g :- passing to validations, authentication and authorisation systems for check auth and validations, database models for getting the required data processing done and then finally decidig on how to format the output and then send the output to the view layer and generally are represented by controllers.
 Business Layer or Data Layer :- This is where the database activities happen and is the heart of the application and if represented in model files.
 
--Now that we know what MVC is lets refactor the apis that we had written in previous class and convert them into an MVC system.
+- Now that we know what MVC is lets refactor the apis that we had written in previous class and convert them into an MVC system.
 
 # For post data like tags, post, comments from postman and take ref from each other we can see it below:
 
@@ -56,4 +56,12 @@ Business Layer or Data Layer :- This is where the database activities happen and
     ]
 }
 ```
+
+![Screenshot (277)](https://user-images.githubusercontent.com/80479635/154857212-5614bdb6-1242-4328-8478-a128c68523bb.png)
+![Screenshot (278)](https://user-images.githubusercontent.com/80479635/154857220-583aff7e-a5f0-4bdf-8fc8-17ab90f87242.png)
+![Screenshot (279)](https://user-images.githubusercontent.com/80479635/154857229-c47896b7-f3c8-41a5-84fb-7f9b8dc6daa7.png)
+
+
+
+
 
